@@ -44,6 +44,7 @@
 			);
 			sourceTree = "<group>";
 			tabWidth = 1;
+			usesTabs = 0;
 			wrapsLines = 0;
 		};
 		DE3D52242AF0619A00A32D92 /* Products */ = {
