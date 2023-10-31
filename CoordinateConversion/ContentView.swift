@@ -5,6 +5,14 @@
 //  Forked by Achraf Kassioui on 30 October 2023
 //
 
+/*
+	
+	Questions:
+	- Geometry Reader: what is it for?
+	- There's an enum ControlUpdate with 3 cases, then there's a handle
+	
+	*/
+
 import SpriteKit
 import SwiftUI
 import Combine
@@ -13,8 +21,9 @@ enum ControlUpdate {
 				case tap(UITapGestureRecognizer) // print SpriteKit coordinate
 				case doubleTap // reset camera
 				case pan(UIPanGestureRecognizer) // move camera
-				
 }
+
+// MARK: - SwiftUI view
 
 struct ExampleView: View {
 				@State var isPaused = false
@@ -28,6 +37,7 @@ struct ExampleView: View {
 																										messages: messages)
 												.overlay(gestures)
 								}
+								.ignoresSafeArea()
 				}
 				
 				@ViewBuilder var gestures: some View {
@@ -36,15 +46,16 @@ struct ExampleView: View {
 				}
 }
 
+// MARK: - What is this?
+
 struct SpriteKitView: View {
 				@Binding var isPaused: Bool
 				
 				let size: CGSize
-				let messages:  PassthroughSubject<ControlUpdate, Never>
+				let messages: PassthroughSubject<ControlUpdate, Never>
 				
 				var scene: SKScene{
-								let scene = ExampleScene(size: size,
-																																	messages: messages)
+								let scene = ExampleScene(size: size, messages: messages)
 								scene.size = size
 								scene.scaleMode = .fill
 								return scene
@@ -165,6 +176,8 @@ class ExampleScene: SKScene {
 				}
 				
 				var dragOrigin: CGPoint = .zero
+				
+				// MARK: - Handle
 				
 				private func handle(_ message: ControlUpdate) {
 								switch message {

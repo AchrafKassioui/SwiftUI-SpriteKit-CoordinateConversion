@@ -19,6 +19,7 @@
 		DE3D52282AF0619A00A32D92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE3D522A2AF0619C00A32D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3D522D2AF0619C00A32D92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE5411CC2AF1B5490025635A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 			children = (
 				DE3D52262AF0619A00A32D92 /* CoordinateConversionApp.swift */,
 				DE3D52282AF0619A00A32D92 /* ContentView.swift */,
+				DE5411CC2AF1B5490025635A /* README.md */,
 				DE3D522A2AF0619C00A32D92 /* Assets.xcassets */,
 				DE3D522C2AF0619C00A32D92 /* Preview Content */,
 			);
