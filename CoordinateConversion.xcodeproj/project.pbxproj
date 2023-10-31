@@ -20,7 +20,6 @@
 		DE3D522A2AF0619C00A32D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3D522D2AF0619C00A32D92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5411CC2AF1B5490025635A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DE5411CE2AF1BB140025635A /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = .editorconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +36,6 @@
 		DE3D521A2AF0619A00A32D92 = {
 			isa = PBXGroup;
 			children = (
-				DE5411CE2AF1BB140025635A /* .editorconfig */,
 				DE5411CC2AF1B5490025635A /* README.md */,
 				DE3D52252AF0619A00A32D92 /* CoordinateConversion */,
 				DE3D52242AF0619A00A32D92 /* Products */,

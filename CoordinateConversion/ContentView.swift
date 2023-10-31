@@ -1,7 +1,7 @@
 //
 //  CoordinateConversion
 //
-//		Original boilerplate by John Knowles
+//  Original boilerplate by John Knowles
 //  https://gist.github.com/overlair/b500460a3190d608d7d2a8108c8c0d0c
 //  Forked by Achraf Kassioui on 30 October 2023
 //
