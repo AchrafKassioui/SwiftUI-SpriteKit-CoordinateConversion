@@ -1,17 +1,10 @@
 //
 //  CoordinateConversion
 //
-//		Original boilerplate by John Knowles https://gist.github.com/overlair/b500460a3190d608d7d2a8108c8c0d0c
+//		Original boilerplate by John Knowles
+//  https://gist.github.com/overlair/b500460a3190d608d7d2a8108c8c0d0c
 //  Forked by Achraf Kassioui on 30 October 2023
 //
-
-/*
-	
-	Questions:
-	- Geometry Reader: what is it for?
-	- There's an enum ControlUpdate with 3 cases, then there's a handle
-	
-	*/
 
 import SpriteKit
 import SwiftUI
@@ -143,13 +136,10 @@ class ExampleScene: SKScene {
 								
 								// setup nodes
 								
-								let shape: CGPath = .init(roundedRect: .init(origin: .zero,
-																																																					size: .init(width: 50,height: 50)),
+								let shape: CGPath = .init(roundedRect: .init(origin: .zero,size: .init(width: 50,height: 50)),
 																																		cornerWidth: 12,
 																																		cornerHeight: 12,
 																																		transform: nil)
-								
-								
 								
 								let tapNode = SKShapeNode(path: shape, centered: true)
 								self.shapeNode = tapNode
@@ -161,7 +151,6 @@ class ExampleScene: SKScene {
 								node.position = origin
 								node.fillColor = .orange
 								addChild(node)
-								
 								
 								camera = sceneCamera
 								sceneCamera.position = origin
@@ -181,6 +170,7 @@ class ExampleScene: SKScene {
 				
 				private func handle(_ message: ControlUpdate) {
 								switch message {
+												
 								case .tap(let gesture):
 												let location = gesture.location(in: gesture.view)
 												let point = convertPoint(fromView: location)
@@ -192,8 +182,10 @@ class ExampleScene: SKScene {
 												
 								case .pan(let  pan):
 												switch pan.state {
+																
 												case .began:
 																dragOrigin = self.camera?.position ?? .zero
+																
 												case .changed:
 																let translation = pan.translation(in: pan.view)
 																let point =  CGPoint(x: dragOrigin.x - translation.x,
@@ -201,6 +193,7 @@ class ExampleScene: SKScene {
 																
 																moveNode(node: sceneCamera,
 																									to: point)
+																
 												case .ended, .cancelled:
 																dragOrigin = .zero
 																
@@ -228,8 +221,6 @@ class ExampleScene: SKScene {
 				}
 }
 
-struct ContentView_Previews: PreviewProvider {
-				static var previews: some View {
-								ExampleView()
-				}
+#Preview {
+				ExampleView()
 }
