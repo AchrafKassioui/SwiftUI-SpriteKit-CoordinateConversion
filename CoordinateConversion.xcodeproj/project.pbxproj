@@ -36,6 +36,7 @@
 		DE3D521A2AF0619A00A32D92 = {
 			isa = PBXGroup;
 			children = (
+				DE5411CC2AF1B5490025635A /* README.md */,
 				DE3D52252AF0619A00A32D92 /* CoordinateConversion */,
 				DE3D52242AF0619A00A32D92 /* Products */,
 			);
@@ -55,7 +56,6 @@
 			children = (
 				DE3D52262AF0619A00A32D92 /* CoordinateConversionApp.swift */,
 				DE3D52282AF0619A00A32D92 /* ContentView.swift */,
-				DE5411CC2AF1B5490025635A /* README.md */,
 				DE3D522A2AF0619C00A32D92 /* Assets.xcassets */,
 				DE3D522C2AF0619C00A32D92 /* Preview Content */,
 			);
